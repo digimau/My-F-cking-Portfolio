@@ -32,6 +32,13 @@ h1:hover {
   background-color: #d8d2d9;
   opacity: 50%;
 }
+
+h2 {
+  font-weight: 400;
+  font-size: 56px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
 a {
   color: #000000;
 }
@@ -85,6 +92,11 @@ a:active {
   width: 100%;
 }
 
+.imgproject1 {
+  width: 100%;
+  justify-content: center;
+}
+
 .social {
   display: flex;
   position: absolute;
@@ -95,9 +107,12 @@ a:active {
 }
 
 .project1 {
-  height: 60%;
+  height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .clicked {
@@ -116,6 +131,44 @@ a:active {
   float: right;
   width: 80%;
   align-items: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: none;
+  }
+
+  h1 {
+    font-weight: 400;
+    font-size: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .navdesk {
+    display: none;
+  }
+
+  .hamburger {
+    width: 100%;
+    background-color: #d8d2d9;
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-container {
+    width: 100%;
+    height: 90%;
+  }
 }
 
 /* 
